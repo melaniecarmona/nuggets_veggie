@@ -137,6 +137,9 @@ Reg_B <= RegB;
 Reg_C <= RegC;
 Reg_D <= RegD;
 
-Status_out <= N & Z & C;
+
+with clear select
+Status_out <= N & Z & C when '0' ,
+         "000" when others;
 
 end Behavioral;
