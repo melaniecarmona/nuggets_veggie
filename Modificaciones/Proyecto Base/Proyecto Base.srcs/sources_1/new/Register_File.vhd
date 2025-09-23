@@ -132,5 +132,11 @@ with select_Second select
                    RegC when "10",
                    RegD when "11";                                  
                    
+Reg_A <= RegA;
+Reg_B <= RegB;
+Reg_C <= RegC;
+Reg_D <= RegD;
+
+Status_out <= N & Z & C;
 
 end Behavioral;
