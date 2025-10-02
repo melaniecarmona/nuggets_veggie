@@ -33,6 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity PC is
     Port ( PC_in : in STD_LOGIC;
+           clock : in STD_LOGIC;
            clear : in STD_LOGIC;
            load_PC : in STD_LOGIC;
            PC_out : out STD_LOGIC_VECTOR (11 downto 0));

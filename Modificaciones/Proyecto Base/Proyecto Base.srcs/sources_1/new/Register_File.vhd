@@ -35,8 +35,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Register_File is
-    Port ( clock : in STD_LOGIC;
-           clear : in STD_LOGIC;
+    Port ( clk : in STD_LOGIC;
+           clr : in STD_LOGIC;
            N : in STD_LOGIC;
            Z : in STD_LOGIC;
            C : in STD_LOGIC;
@@ -72,6 +72,9 @@ signal  RegA : STD_LOGIC_VECTOR (15 downto 0);
 signal  RegB : STD_LOGIC_VECTOR (15 downto 0);
 signal  RegC : STD_LOGIC_VECTOR (15 downto 0);
 signal  RegD : STD_LOGIC_VECTOR (15 downto 0);
+signal datain_status : STD_LOGIC_VECTOR (12 downto 0);
+signal reg_in : STD_LOGIC_VECTOR (15 downto 0);
+signal reg_out : STD_LOGIC_VECTOR (15 downto 0);
 
 begin
 
@@ -92,34 +95,46 @@ with S_reg select
          '0' when others;
 
 inst_RegA : Reg port map(
-            clock => clock,
-            clear => clear,
-            load => Load_A,
+            clock => clk,
+            clear => clr,
+            load => load_A,
             datain => result,
             dataout => RegA
             );
 inst_RegB : Reg port map(
-            clock => clock,
-            clear => clear,
-            load => Load_B,
+            clock => clk,
+            clear => clr,
+            load => load_B,
             datain => result,
             dataout => RegB
             );
 inst_RegC : Reg port map(
-            clock => clock,
-            clear => clear,
-            load => Load_C,
+            clock => clk,
+            clear => clr,
+            load => load_C,
             datain => result,
             dataout => RegC
             );
 inst_RegD : Reg port map(
-            clock => clock,
-            clear => clear,
-            load => Load_D,
+            clock => clk,
+            clear => clr,
+            load => '0',
             datain => result,
             dataout => RegD
             );
-            
+
+reg_in <= datain_status & C & Z & N;
+
+inst_Status : Reg port map(
+            clock => clk,
+            clear => clr,
+            load => '1',
+            datain => reg_in,
+            dataout => reg_out
+            ); 
+
+status_out <= reg_out(2 downto 0);
+
 with select_First select
     first_Operator <= RegA when "00",
                    RegB when "01",
@@ -136,10 +151,5 @@ Reg_A <= RegA;
 Reg_B <= RegB;
 Reg_C <= RegC;
 Reg_D <= RegD;
-
-
-with clear select
-Status_out <= N & Z & C when '0' ,
-         "000" when others;
 
 end Behavioral;
