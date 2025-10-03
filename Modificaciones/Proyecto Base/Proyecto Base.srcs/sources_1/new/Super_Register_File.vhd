@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Super_Register_File is
-    Port ( pc_in : in STD_LOGIC;
+    Port ( pc_in : in STD_LOGIC_VECTOR(11 downto 0);
            load_pc : in STD_LOGIC;
            clock : in STD_LOGIC;
            clear : in STD_LOGIC;
@@ -79,7 +79,7 @@ component Register_File
 end component;
 
 component PC
-    Port ( PC_in : in std_logic;
+    Port ( PC_in : in STD_LOGIC_VECTOR(11 downto 0);
            clock : in std_logic;
            clear : in std_logic;
            load_PC : in std_logic;
