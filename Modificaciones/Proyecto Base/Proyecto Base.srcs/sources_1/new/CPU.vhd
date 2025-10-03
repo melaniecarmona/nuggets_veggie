@@ -24,7 +24,6 @@ end CPU;
 
 architecture Behavioral of CPU is
 
-
 component Control_unit is
     Port ( rom : in STD_LOGIC_VECTOR (45 downto 0);
            status : in STD_LOGIC_VECTOR (2 downto 0);
@@ -97,8 +96,8 @@ signal out_1 : STD_LOGIC_VECTOR(15 downto 0);
 signal out_2 : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
-LIT <= rom_dataout(61 downto 47);
-va_control_unit <= rom_dataout(61 downto 15);
+LIT <= rom_dataout(61 downto 46);
+va_control_unit <= rom_dataout(61 downto 16);
 pcin <= rom_dataout(11 downto 0);
 
 inst_Control_Unit: Control_Unit port map(
@@ -117,8 +116,8 @@ S_Reg => sS_reg
 );
 
 ins_alu: ALU port map(
-a => mux_1,
-b => mux_2,
+a => out_1,
+b => out_2,
 sop => SOP,
 c => C,
 z => Z,
@@ -163,7 +162,7 @@ out_2 <= "0000000000000000" when "00",
          "0000000000000000" when others;
 
 with mux_s select
-ram_address <= S_Op when '0',
+ram_address <= S_Op(11 downto 0) when '0',
          LIT(11 downto 0) when '1';
 
 end Behavioral;

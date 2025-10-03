@@ -3,10 +3,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity Adder8 is
-    Port ( a  : in  std_logic_vector (7 downto 0);
-           b  : in  std_logic_vector (7 downto 0);
+    Port ( a  : in  std_logic_vector (15 downto 0);
+           b  : in  std_logic_vector (15 downto 0);
            ci : in  std_logic;
-           s  : out std_logic_vector (7 downto 0);
+           s  : out std_logic_vector (15 downto 0);
            co : out std_logic);
 end Adder8;
 
@@ -20,7 +20,7 @@ component FA
            co : out std_logic);
     end component;
 
-signal c : std_logic_vector(6 downto 0);
+signal c : std_logic_vector(14 downto 0);
 
 begin
 
@@ -87,5 +87,65 @@ inst_FA7: FA port map(
         s      =>s(7),
         co     =>co
     );
+    
+inst_FA8: FA port map(
+        a      =>a(8),
+        b      =>b(8),
+        ci     =>c(7),
+        s      =>s(8),
+        co     =>co
+    );
+
+inst_FA9: FA port map(
+        a      =>a(9),
+        b      =>b(9),
+        ci     =>c(8),
+        s      =>s(9),
+        co     =>co
+    );
+    
+inst_FA10: FA port map(
+        a      =>a(10),
+        b      =>b(10),
+        ci     =>c(9),
+        s      =>s(10),
+        co     =>co
+    );
+inst_FA11: FA port map(
+        a      =>a(11),
+        b      =>b(11),
+        ci     =>c(10),
+        s      =>s(11),
+        co     =>co
+    );
+inst_FA12: FA port map(
+        a      =>a(12),
+        b      =>b(12),
+        ci     =>c(11),
+        s      =>s(12),
+        co     =>co
+    );
+inst_FA13: FA port map(
+        a      =>a(13),
+        b      =>b(13),
+        ci     =>c(12),
+        s      =>s(13),
+        co     =>co
+    );
+inst_FA14: FA port map(
+        a      =>a(14),
+        b      =>b(14),
+        ci     =>c(13),
+        s      =>s(14),
+        co     =>co
+    );
+inst_FA15: FA port map(
+        a      =>a(15),
+        b      =>b(15),
+        ci     =>c(14),
+        s      =>s(15),
+        co     =>co
+    );                        
+        
     
 end Behavioral;

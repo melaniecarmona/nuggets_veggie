@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Sep 23 12:38:53 2025
-# Process ID: 2788
+# Start of session at: Fri Oct  3 16:32:07 2025
+# Process ID: 10570
 # Current directory: /home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.runs/synth_1
 # Command line: vivado -log Basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3.tcl
 # Log file: /home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.runs/synth_1/Basys3.vds
@@ -16,30 +16,104 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2871 
+INFO: Helper process launched with PID 10621 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1920.574 ; gain = 201.719 ; free physical = 113 ; free virtual = 1453
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1928.148 ; gain = 202.688 ; free physical = 123 ; free virtual = 892
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Basys3' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:17]
 WARNING: [Synth 8-5640] Port 'dis' is missing in component declaration [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:84]
 INFO: [Synth 8-3491] module 'CPU' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:7' bound to instance 'inst_CPU' of component 'CPU' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:177]
 INFO: [Synth 8-638] synthesizing module 'CPU' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:25]
-INFO: [Synth 8-256] done synthesizing module 'CPU' (1#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:25]
+INFO: [Synth 8-3491] module 'Control_unit' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Control_unit.vhd:34' bound to instance 'inst_Control_Unit' of component 'Control_unit' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'Control_unit' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Control_unit.vhd:49]
+WARNING: [Synth 8-3848] Net w in module/entity Control_unit does not have driver. [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Control_unit.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Control_unit' (1#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Control_unit.vhd:49]
+INFO: [Synth 8-3491] module 'ALU' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:4' bound to instance 'ins_alu' of component 'ALU' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'ALU' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:14]
+INFO: [Synth 8-3491] module 'Adder8' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:5' bound to instance 'inst_sum' of component 'Adder8' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'Adder8' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:13]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA0' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/HA.vhd:5' bound to instance 'inst_HA' of component 'HA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'HA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/HA.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'HA' (2#1) [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/HA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/HA.vhd:5' bound to instance 'inst_HA2' of component 'HA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'FA' (3#1) [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:12]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA1' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:35]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA2' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA3' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:51]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA4' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:59]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA5' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:67]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA6' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:75]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA7' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:83]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA8' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:91]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA9' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:99]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA10' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:107]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA11' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:114]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA12' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:121]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA13' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:128]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA14' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:135]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA15' of component 'FA' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'Adder8' (4#1) [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (5#1) [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:14]
+INFO: [Synth 8-3491] module 'Super_Register_File' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:34' bound to instance 'inst_Alu' of component 'Super_Register_File' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'Super_Register_File' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:57]
+INFO: [Synth 8-3491] module 'Register_File' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:37' bound to instance 'inst_RegFile' of component 'Register_File' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'Register_File' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:57]
+INFO: [Synth 8-3491] module 'Reg' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:37' bound to instance 'inst_RegA' of component 'Reg' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'Reg' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:45]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD15' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'FFD' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'FFD' (6#1) [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:12]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD14' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:98]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD13' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:107]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD12' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:116]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD11' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:125]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD10' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:134]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD9' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:143]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD8' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:152]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD7' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:161]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD6' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:170]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD5' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:179]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD4' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:188]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD3' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:197]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD2' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:206]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD1' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:215]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD0' of component 'FFD' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:224]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (7#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:45]
+INFO: [Synth 8-3491] module 'Reg' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:37' bound to instance 'inst_RegB' of component 'Reg' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:104]
+INFO: [Synth 8-3491] module 'Reg' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:37' bound to instance 'inst_RegC' of component 'Reg' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:111]
+INFO: [Synth 8-3491] module 'Reg' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:37' bound to instance 'inst_RegD' of component 'Reg' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:118]
+INFO: [Synth 8-3491] module 'Reg' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:37' bound to instance 'inst_Status' of component 'Reg' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:128]
+WARNING: [Synth 8-3848] Net datain_status in module/entity Register_File does not have driver. [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'Register_File' (8#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:57]
+INFO: [Synth 8-3491] module 'PC' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:34' bound to instance 'inst_PC' of component 'PC' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'PC' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'PC' (9#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Super_Register_File' (10#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:57]
+INFO: [Synth 8-226] default block is never used [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:158]
+WARNING: [Synth 8-3848] Net S_Op in module/entity CPU does not have driver. [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:93]
+WARNING: [Synth 8-3848] Net ram_datain in module/entity CPU does not have driver. [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:12]
+WARNING: [Synth 8-3848] Net rom_address in module/entity CPU does not have driver. [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:15]
+WARNING: [Synth 8-3848] Net dis in module/entity CPU does not have driver. [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:17]
+WARNING: [Synth 8-3848] Net regA in module/entity CPU does not have driver. [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:18]
+WARNING: [Synth 8-3848] Net F_Op in module/entity CPU does not have driver. [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (11#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:25]
 INFO: [Synth 8-3491] module 'ROM' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/ROM.vhd:6' bound to instance 'inst_ROM' of component 'ROM' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:193]
 INFO: [Synth 8-638] synthesizing module 'ROM' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/ROM.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'ROM' (2#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/ROM.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (12#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/ROM.vhd:17]
 INFO: [Synth 8-3491] module 'RAM' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/RAM.vhd:8' bound to instance 'inst_RAM' of component 'RAM' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:203]
 INFO: [Synth 8-638] synthesizing module 'RAM' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/RAM.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'RAM' (3#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/RAM.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (13#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/RAM.vhd:18]
 INFO: [Synth 8-3491] module 'Clock_Divider' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:7' bound to instance 'inst_Clock_Divider' of component 'Clock_Divider' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:212]
 INFO: [Synth 8-638] synthesizing module 'Clock_Divider' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'Clock_Divider' (4#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Divider' (14#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:13]
 INFO: [Synth 8-3491] module 'Display_Controller' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:7' bound to instance 'inst_Display_Controller' of component 'Display_Controller' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:219]
 INFO: [Synth 8-638] synthesizing module 'Display_Controller' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'Display_Controller' (5#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Display_Controller' (15#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:19]
 INFO: [Synth 8-3491] module 'Debouncer' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer0' of component 'Debouncer' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:230]
 INFO: [Synth 8-638] synthesizing module 'Debouncer' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'Debouncer' (6#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (16#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:14]
 INFO: [Synth 8-3491] module 'Debouncer' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer1' of component 'Debouncer' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:231]
 INFO: [Synth 8-3491] module 'Debouncer' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer2' of component 'Debouncer' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:232]
 INFO: [Synth 8-3491] module 'Debouncer' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer3' of component 'Debouncer' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:233]
@@ -49,10 +123,82 @@ INFO: [Synth 8-638] synthesizing module 'Programmer' [/home/nugget/Documents/nug
 INFO: [Synth 8-3491] module 'UART' declared at '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/UART.vhd:11' bound to instance 'inst_UART' of component 'UART' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:132]
 INFO: [Synth 8-638] synthesizing module 'UART' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/UART.vhd:37]
 	Parameter DIVISOR bound to: 54 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'UART' (7#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/UART.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'Programmer' (8#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'UART' (17#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/UART.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Programmer' (18#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:19]
 WARNING: [Synth 8-3848] Net led in module/entity Basys3 does not have driver. [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:8]
-INFO: [Synth 8-256] done synthesizing module 'Basys3' (9#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Basys3' (19#1) [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:17]
+WARNING: [Synth 8-3331] design Control_unit has unconnected port w
+WARNING: [Synth 8-3331] design Control_unit has unconnected port rom[45]
+WARNING: [Synth 8-3331] design Control_unit has unconnected port rom[44]
+WARNING: [Synth 8-3331] design Control_unit has unconnected port rom[35]
+WARNING: [Synth 8-3331] design Control_unit has unconnected port rom[34]
+WARNING: [Synth 8-3331] design Control_unit has unconnected port rom[30]
+WARNING: [Synth 8-3331] design Control_unit has unconnected port rom[29]
+WARNING: [Synth 8-3331] design Control_unit has unconnected port rom[28]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[15]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[14]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[13]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[12]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[11]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[10]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[9]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[8]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[7]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[6]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[5]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[4]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[3]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[2]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[1]
+WARNING: [Synth 8-3331] design CPU has unconnected port ram_datain[0]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[11]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[10]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[9]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[8]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[7]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[6]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[5]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[4]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[3]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[2]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[1]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_address[0]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[15]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[14]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[13]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[12]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[11]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[10]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[9]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[8]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[7]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[6]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[5]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[4]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[3]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[2]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[1]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[0]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[15]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[14]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[13]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[12]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[11]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[10]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[9]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[8]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[7]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[6]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[5]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[4]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[3]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[2]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[1]
+WARNING: [Synth 8-3331] design CPU has unconnected port regA[0]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[15]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[14]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[13]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[12]
 WARNING: [Synth 8-3331] design Basys3 has unconnected port led[15]
 WARNING: [Synth 8-3331] design Basys3 has unconnected port led[14]
 WARNING: [Synth 8-3331] design Basys3 has unconnected port led[13]
@@ -81,7 +227,7 @@ WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[4]
 WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[3]
 WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1983.324 ; gain = 264.469 ; free physical = 194 ; free virtual = 1475
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1991.898 ; gain = 266.438 ; free physical = 203 ; free virtual = 927
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -94,12 +240,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1986.293 ; gain = 267.438 ; free physical = 198 ; free virtual = 1481
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1994.867 ; gain = 269.406 ; free physical = 186 ; free virtual = 923
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1986.293 ; gain = 267.438 ; free physical = 198 ; free virtual = 1481
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1994.867 ; gain = 269.406 ; free physical = 186 ; free virtual = 923
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1986.293 ; gain = 0.000 ; free physical = 190 ; free virtual = 1475
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1994.867 ; gain = 0.000 ; free physical = 171 ; free virtual = 921
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -110,31 +256,36 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2121.059 ; gain = 0.000 ; free physical = 127 ; free virtual = 1405
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2135.539 ; gain = 0.000 ; free physical = 114 ; free virtual = 832
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2121.059 ; gain = 0.000 ; free physical = 127 ; free virtual = 1405
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2135.539 ; gain = 0.000 ; free physical = 114 ; free virtual = 833
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 147 ; free virtual = 1431
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 139 ; free virtual = 884
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 147 ; free virtual = 1431
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 139 ; free virtual = 885
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 147 ; free virtual = 1431
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 139 ; free virtual = 886
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "selectfirst" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "selectsecond" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SelTwo" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Sel_Alu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "S_Reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 WARNING: [Synth 8-3936] Found unconnected internal register 'memory_reg[2]' and it is trimmed from '8' to '6' bits. [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:92]
 WARNING: [Synth 8-3936] Found unconnected internal register 'memory_reg[0]' and it is trimmed from '8' to '4' bits. [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:92]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 148 ; free virtual = 1436
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 130 ; free virtual = 893
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -151,7 +302,8 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit       Adders := 4     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 5     
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 37    
 +---Registers : 
 	               62 Bit    Registers := 1     
 	               12 Bit    Registers := 1     
@@ -161,11 +313,13 @@ Detailed RTL Component Info :
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 5     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 15    
+	                1 Bit    Registers := 95    
 +---Muxes : 
 	   2 Input     62 Bit        Muxes := 1     
 	   4 Input     27 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 6     
+	   4 Input     16 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 2     
 	   2 Input      9 Bit        Muxes := 3     
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
@@ -175,7 +329,11 @@ Detailed RTL Component Info :
 	   4 Input      4 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 3     
 	   3 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 19    
+	   9 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 25    
+	   5 Input      1 Bit        Muxes := 2     
 	  12 Input      1 Bit        Muxes := 4     
 	   4 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 1     
@@ -184,7 +342,6 @@ Detailed RTL Component Info :
 	   8 Input      1 Bit        Muxes := 2     
 	   7 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -195,6 +352,43 @@ Hierarchical RTL Component report
 Module Basys3 
 Detailed RTL Component Info : 
 +---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module FFD 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Reg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Register_File 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module CPU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 1     
 Module ROM 
 Detailed RTL Component Info : 
@@ -281,34 +475,10 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "inst_CPU/inst_Control_Unit/Sel_Alu" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
 WARNING: [Synth 8-3331] design Basys3 has unconnected port led[15]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[14]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[13]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[12]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[11]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[10]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[9]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[8]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[7]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[6]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[5]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[4]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[3]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[2]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[1]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port led[0]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[12]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[11]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[10]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[9]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[8]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[7]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[6]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[5]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[4]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[3]
-WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[bits][8] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[fsm_state] )
 INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][8]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][7]'
@@ -324,8 +494,53 @@ INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[nb
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[nbits][1] )
 INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][1]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][0]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[bits][0] )
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_188/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_195/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_202/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_209/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_216/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_223/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_230/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_237/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_244/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_251/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_258/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_265/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_272/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_279/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 1st driver pin 'i_0/inst_CPU/inst_Alu/inst_RegFile/i_286/O' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin O with 2nd driver pin 'GND' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net O is connected to at least one constant driver which has been preserved, other driver is ignored [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:139]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 160 ; free virtual = 1385
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 152 ; free virtual = 874
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -335,8 +550,8 @@ Distributed RAM: Preliminary Mapping	Report (see note below)
 +------------+---------------------+-----------+----------------------+------------------+
 |Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives       | 
 +------------+---------------------+-----------+----------------------+------------------+
-|Basys3      | inst_RAM/memory_reg | Implied   | 4 K x 16             | RAM256X1S x 256	 | 
 |Basys3      | inst_ROM/memory_reg | Implied   | 4 K x 62             | RAM256X1S x 992	 | 
+|Basys3      | inst_RAM/memory_reg | Implied   | 4 K x 16             | RAM256X1S x 256	 | 
 +------------+---------------------+-----------+----------------------+------------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
@@ -353,13 +568,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 133 ; free virtual = 1332
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:06 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 127 ; free virtual = 767
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 115 ; free virtual = 1314
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:07 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 131 ; free virtual = 755
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -369,8 +584,8 @@ Distributed RAM: Final Mapping	Report
 +------------+---------------------+-----------+----------------------+------------------+
 |Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives       | 
 +------------+---------------------+-----------+----------------------+------------------+
-|Basys3      | inst_RAM/memory_reg | Implied   | 4 K x 16             | RAM256X1S x 256	 | 
 |Basys3      | inst_ROM/memory_reg | Implied   | 4 K x 62             | RAM256X1S x 992	 | 
+|Basys3      | inst_RAM/memory_reg | Implied   | 4 K x 16             | RAM256X1S x 256	 | 
 +------------+---------------------+-----------+----------------------+------------------+
 
 ---------------------------------------------------------------------------------
@@ -386,7 +601,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 131 ; free virtual = 1314
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:09 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 124 ; free virtual = 751
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -410,13 +625,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 124 ; free virtual = 1306
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:14 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 115 ; free virtual = 748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 124 ; free virtual = 1306
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:14 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 115 ; free virtual = 748
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -424,36 +639,107 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[11] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD11/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[11] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD11/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[10] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD10/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[10] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD10/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[9] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD9/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[9] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD9/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[8] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD8/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[8] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD8/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[7] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD7/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[7] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD7/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[6] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD6/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[6] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD6/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[5] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD5/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[5] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD5/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[4] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD4/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[4] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD4/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[3] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD3/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[3] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD3/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[2] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD2/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[2] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD2/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[7] with 1st driver pin 'memory_reg_0_255_3_3_i_1__0/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[7] with 2nd driver pin 'inst_CPU/inst_Alu/inst_PC/PC_out[7]' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:114]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[6] with 1st driver pin 'memory_reg_0_255_3_3_i_2__0/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[6] with 2nd driver pin 'inst_CPU/inst_Alu/inst_PC/PC_out[6]' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:114]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[5] with 1st driver pin 'memory_reg_0_255_3_3_i_3__0/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[5] with 2nd driver pin 'inst_CPU/inst_Alu/inst_PC/PC_out[5]' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:114]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[4] with 1st driver pin 'memory_reg_0_255_3_3_i_4__0/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[4] with 2nd driver pin 'inst_CPU/inst_Alu/inst_PC/PC_out[4]' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:114]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[2] with 1st driver pin 'memory_reg_0_255_3_3_i_5/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[2] with 2nd driver pin 'inst_CPU/inst_Alu/inst_PC/PC_out[2]' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:114]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[0] with 1st driver pin 'memory_reg_0_255_3_3_i_6__0/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ram_address[0] with 2nd driver pin 'inst_CPU/inst_Alu/inst_PC/PC_out[0]' [/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:114]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[15] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD15/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[15] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD15/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[14] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD14/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[14] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD14/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[13] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD13/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[13] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD13/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[12] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD12/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[12] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD12/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[7] with 1st driver pin 'q_i_2__25/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[7] with 2nd driver pin 'q_i_3__9/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[6] with 1st driver pin 'q_i_7__3/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[6] with 2nd driver pin 'q_i_8__2/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[5] with 1st driver pin 'q_i_2__24/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[5] with 2nd driver pin 'q_i_3__8/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[2] with 1st driver pin 'q_i_2__22/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[2] with 2nd driver pin 'q_i_3__6/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[3] with 1st driver pin 'q_i_4__16/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[3] with 2nd driver pin 'q_i_5__4/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[1] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD1/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[1] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD1/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[0] with 1st driver pin 'q_i_2__21/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[0] with 2nd driver pin 'q_i_3__5/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_1[0] with 1st driver pin 'q_i_4__15/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_1[0] with 2nd driver pin 'q_i_5__3/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[1] with 1st driver pin 'q_i_6__1/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[1] with 2nd driver pin 'q_i_7__2/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[4] with 1st driver pin 'q_i_2__23/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[4] with 2nd driver pin 'q_i_3__7/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[0] with 1st driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegD/inst_FFD0/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin regD[0] with 2nd driver pin 'inst_CPU/inst_Alu/inst_RegFile/inst_RegA/inst_FFD0/q_reg/Q' [/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:17]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[8] with 1st driver pin 'q_i_3__11/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[8] with 2nd driver pin 'q_i_4__9/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[9] with 1st driver pin 'q_i_3__12/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[9] with 2nd driver pin 'q_i_4__10/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[10] with 1st driver pin 'q_i_3__13/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[10] with 2nd driver pin 'q_i_4__11/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[11] with 1st driver pin 'q_i_4__17/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst_CPU/out_2[11] with 2nd driver pin 'q_i_5__5/O' [/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:36]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
+|1     |multi_driven_nets |      0|       43|Failed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 124 ; free virtual = 1306
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 114 ; free virtual = 751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 123 ; free virtual = 1306
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 114 ; free virtual = 751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 123 ; free virtual = 1306
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 114 ; free virtual = 751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 123 ; free virtual = 1306
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 114 ; free virtual = 751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -463,69 +749,143 @@ Report BlackBoxes:
 +------+--------------+----------+
 |      |BlackBox name |Instances |
 +------+--------------+----------+
-|1     |CPU           |         1|
+|1     |PC            |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
 +------+----------+------+
 |      |Cell      |Count |
 +------+----------+------+
-|1     |CPU       |     1|
-|2     |BUFG      |     3|
-|3     |CARRY4    |    16|
-|4     |LUT1      |     7|
-|5     |LUT2      |     9|
-|6     |LUT3      |   183|
-|7     |LUT4      |    34|
-|8     |LUT5      |    66|
-|9     |LUT6      |   421|
-|10    |MUXF7     |   126|
-|11    |MUXF8     |    32|
-|12    |RAM256X1S |  1248|
-|13    |FDPE      |     1|
-|14    |FDRE      |   227|
-|15    |FDSE      |     1|
-|16    |IBUF      |     7|
-|17    |OBUF      |    13|
-|18    |OBUFT     |    16|
+|1     |PC        |     1|
+|2     |BUF       |     1|
+|3     |BUFG      |     3|
+|4     |CARRY4    |    16|
+|5     |LUT1      |    16|
+|6     |LUT2      |   184|
+|7     |LUT3      |    37|
+|8     |LUT4      |    68|
+|9     |LUT5      |   101|
+|10    |LUT6      |   281|
+|11    |MUXF7     |   101|
+|12    |MUXF8     |    29|
+|13    |RAM256X1S |   745|
+|14    |FDPE      |     1|
+|15    |FDRE      |   287|
+|16    |FDSE      |     1|
+|17    |IBUF      |     7|
+|18    |OBUF      |    13|
+|19    |OBUFT     |    16|
 +------+----------+------+
 
 Report Instance Areas: 
-+------+--------------------------+-------------------+------+
-|      |Instance                  |Module             |Cells |
-+------+--------------------------+-------------------+------+
-|1     |top                       |                   |  2531|
-|2     |  inst_Clock_Divider      |Clock_Divider      |    69|
-|3     |  inst_Display_Controller |Display_Controller |    33|
-|4     |  inst_Programmer         |Programmer         |   473|
-|5     |    inst_UART             |UART               |    58|
-|6     |  inst_RAM                |RAM                |   384|
-|7     |  inst_ROM                |ROM                |  1396|
-+------+--------------------------+-------------------+------+
++------+--------------------------+--------------------+------+
+|      |Instance                  |Module              |Cells |
++------+--------------------------+--------------------+------+
+|1     |top                       |                    |  1919|
+|2     |  inst_CPU                |CPU                 |   121|
+|3     |    inst_Alu              |Super_Register_File |   116|
+|4     |      inst_RegFile        |Register_File       |   104|
+|5     |        inst_RegA         |Reg                 |    16|
+|6     |          inst_FFD0       |FFD_50              |     1|
+|7     |          inst_FFD1       |FFD_51              |     1|
+|8     |          inst_FFD10      |FFD_52              |     1|
+|9     |          inst_FFD11      |FFD_53              |     1|
+|10    |          inst_FFD12      |FFD_54              |     1|
+|11    |          inst_FFD13      |FFD_55              |     1|
+|12    |          inst_FFD14      |FFD_56              |     1|
+|13    |          inst_FFD15      |FFD_57              |     1|
+|14    |          inst_FFD2       |FFD_58              |     1|
+|15    |          inst_FFD3       |FFD_59              |     1|
+|16    |          inst_FFD4       |FFD_60              |     1|
+|17    |          inst_FFD5       |FFD_61              |     1|
+|18    |          inst_FFD6       |FFD_62              |     1|
+|19    |          inst_FFD7       |FFD_63              |     1|
+|20    |          inst_FFD8       |FFD_64              |     1|
+|21    |          inst_FFD9       |FFD_65              |     1|
+|22    |        inst_RegB         |Reg_0               |    20|
+|23    |          inst_FFD0       |FFD_34              |     1|
+|24    |          inst_FFD1       |FFD_35              |     1|
+|25    |          inst_FFD10      |FFD_36              |     1|
+|26    |          inst_FFD11      |FFD_37              |     1|
+|27    |          inst_FFD12      |FFD_38              |     2|
+|28    |          inst_FFD13      |FFD_39              |     2|
+|29    |          inst_FFD14      |FFD_40              |     2|
+|30    |          inst_FFD15      |FFD_41              |     2|
+|31    |          inst_FFD2       |FFD_42              |     1|
+|32    |          inst_FFD3       |FFD_43              |     1|
+|33    |          inst_FFD4       |FFD_44              |     1|
+|34    |          inst_FFD5       |FFD_45              |     1|
+|35    |          inst_FFD6       |FFD_46              |     1|
+|36    |          inst_FFD7       |FFD_47              |     1|
+|37    |          inst_FFD8       |FFD_48              |     1|
+|38    |          inst_FFD9       |FFD_49              |     1|
+|39    |        inst_RegC         |Reg_1               |    52|
+|40    |          inst_FFD0       |FFD_18              |     6|
+|41    |          inst_FFD1       |FFD_19              |     2|
+|42    |          inst_FFD10      |FFD_20              |     3|
+|43    |          inst_FFD11      |FFD_21              |     3|
+|44    |          inst_FFD12      |FFD_22              |     2|
+|45    |          inst_FFD13      |FFD_23              |     1|
+|46    |          inst_FFD14      |FFD_24              |     2|
+|47    |          inst_FFD15      |FFD_25              |     2|
+|48    |          inst_FFD2       |FFD_26              |     3|
+|49    |          inst_FFD3       |FFD_27              |     2|
+|50    |          inst_FFD4       |FFD_28              |     3|
+|51    |          inst_FFD5       |FFD_29              |     4|
+|52    |          inst_FFD6       |FFD_30              |     4|
+|53    |          inst_FFD7       |FFD_31              |     9|
+|54    |          inst_FFD8       |FFD_32              |     3|
+|55    |          inst_FFD9       |FFD_33              |     3|
+|56    |        inst_RegD         |Reg_2               |    16|
+|57    |          inst_FFD0       |FFD                 |     1|
+|58    |          inst_FFD1       |FFD_3               |     1|
+|59    |          inst_FFD10      |FFD_4               |     1|
+|60    |          inst_FFD11      |FFD_5               |     1|
+|61    |          inst_FFD12      |FFD_6               |     1|
+|62    |          inst_FFD13      |FFD_7               |     1|
+|63    |          inst_FFD14      |FFD_8               |     1|
+|64    |          inst_FFD15      |FFD_9               |     1|
+|65    |          inst_FFD2       |FFD_10              |     1|
+|66    |          inst_FFD3       |FFD_11              |     1|
+|67    |          inst_FFD4       |FFD_12              |     1|
+|68    |          inst_FFD5       |FFD_13              |     1|
+|69    |          inst_FFD6       |FFD_14              |     1|
+|70    |          inst_FFD7       |FFD_15              |     1|
+|71    |          inst_FFD8       |FFD_16              |     1|
+|72    |          inst_FFD9       |FFD_17              |     1|
+|73    |    inst_Control_Unit     |Control_unit        |     5|
+|74    |  inst_Clock_Divider      |Clock_Divider       |    69|
+|75    |  inst_Display_Controller |Display_Controller  |    37|
+|76    |  inst_Programmer         |Programmer          |   422|
+|77    |    inst_UART             |UART                |    58|
+|78    |  inst_RAM                |RAM                 |     1|
+|79    |  inst_ROM                |ROM                 |  1229|
++------+--------------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 2121.059 ; gain = 402.203 ; free physical = 123 ; free virtual = 1306
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 2135.539 ; gain = 410.078 ; free physical = 114 ; free virtual = 751
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 2121.059 ; gain = 267.438 ; free physical = 157 ; free virtual = 1340
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 2121.066 ; gain = 402.203 ; free physical = 157 ; free virtual = 1340
+Synthesis finished with 0 errors, 131 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:10 . Memory (MB): peak = 2135.539 ; gain = 269.406 ; free physical = 164 ; free virtual = 803
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 2135.547 ; gain = 410.078 ; free physical = 163 ; free virtual = 807
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2121.066 ; gain = 0.000 ; free physical = 192 ; free virtual = 1382
-INFO: [Netlist 29-17] Analyzing 1422 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2135.547 ; gain = 0.000 ; free physical = 186 ; free virtual = 871
+INFO: [Netlist 29-17] Analyzing 892 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2128.996 ; gain = 0.000 ; free physical = 171 ; free virtual = 1363
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2135.547 ; gain = 0.000 ; free physical = 103 ; free virtual = 811
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1248 instances were transformed.
-  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 1248 instances
+  A total of 746 instances were transformed.
+  BUF => LUT1: 1 instance 
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 745 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-58 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+132 Infos, 112 Warnings, 115 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 2128.996 ; gain = 647.176 ; free physical = 301 ; free virtual = 1493
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2128.996 ; gain = 0.000 ; free physical = 301 ; free virtual = 1493
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:37 . Memory (MB): peak = 2135.547 ; gain = 661.031 ; free physical = 198 ; free virtual = 906
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2135.547 ; gain = 0.000 ; free physical = 199 ; free virtual = 909
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.runs/synth_1/Basys3.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Basys3_utilization_synth.rpt -pb Basys3_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Sep 23 12:40:22 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  3 16:34:04 2025...

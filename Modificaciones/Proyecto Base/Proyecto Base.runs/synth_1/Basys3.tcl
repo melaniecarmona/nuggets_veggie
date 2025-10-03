@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -28,13 +29,23 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_cache_permissions disable [current_project]
 read_vhdl -library xil_defaultlib {
+  {/home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd}
+  /home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd
   {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd}
   {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd}
+  {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Control_unit.vhd}
   {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd}
   {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd}
+  /home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd
+  {/home/nugget/Documents/nuggets_veggie/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd}
+  /home/nugget/Documents/nuggets_veggie/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/HA.vhd
+  {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd}
   {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd}
   {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/RAM.vhd}
   {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/ROM.vhd}
+  {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd}
+  {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd}
+  {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd}
   {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/UART.vhd}
   {/home/nugget/Documents/nuggets_veggie/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd}
 }

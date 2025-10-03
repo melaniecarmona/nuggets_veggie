@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity PC is
-    Port ( PC_in : in STD_LOGIC;
+    Port ( PC_in : in STD_LOGIC_VECTOR(11 downto 0);
            clock : in STD_LOGIC;
            clear : in STD_LOGIC;
            load_PC : in STD_LOGIC;
