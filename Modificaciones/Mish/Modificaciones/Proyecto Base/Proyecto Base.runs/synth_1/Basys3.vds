@@ -1,0 +1,782 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Oct 10 03:03:07 2025
+# Process ID: 3059
+# Current directory: /home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.runs/synth_1
+# Command line: vivado -log Basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3.tcl
+# Log file: /home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.runs/synth_1/Basys3.vds
+# Journal file: /home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Basys3.tcl -notrace
+Command: synth_design -top Basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3103 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1920.016 ; gain = 202.719 ; free physical = 200 ; free virtual = 1386
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Basys3' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:17]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 3 wide [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:166]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 3 wide [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:167]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 3 wide [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:168]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 3 wide [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:169]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 3 wide [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:170]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 3 wide [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:171]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 4 wide and choice expression is 3 wide [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:172]
+WARNING: [Synth 8-5640] Port 'dis' is missing in component declaration [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:84]
+INFO: [Synth 8-3491] module 'CPU' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:7' bound to instance 'inst_CPU' of component 'CPU' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'CPU' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:25]
+INFO: [Synth 8-3491] module 'Control_U' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Control_U.vhd:34' bound to instance 'inst_Control_Unit' of component 'Control_U' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'Control_U' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Control_U.vhd:49]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 3 wide and choice expression is 2 wide [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Control_U.vhd:138]
+INFO: [Synth 8-256] done synthesizing module 'Control_U' (1#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Control_U.vhd:49]
+INFO: [Synth 8-3491] module 'ALU' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:4' bound to instance 'ins_Alu' of component 'ALU' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'ALU' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:14]
+INFO: [Synth 8-3491] module 'Adder16' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:5' bound to instance 'inst_sum' of component 'Adder16' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'Adder16' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:13]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA0' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/HA.vhd:5' bound to instance 'inst_HA' of component 'HA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'HA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/HA.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'HA' (2#1) [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/HA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/HA.vhd:5' bound to instance 'inst_HA2' of component 'HA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'FA' (3#1) [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:12]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA1' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:35]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA2' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA3' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:51]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA4' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:59]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA5' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:67]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA6' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:75]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA7' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:83]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA8' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:91]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA9' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:99]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA10' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:107]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA11' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:114]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA12' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:121]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA13' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:128]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA14' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:135]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/FA.vhd:4' bound to instance 'inst_FA15' of component 'FA' [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'Adder16' (4#1) [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/Componentes/Adder8.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (5#1) [/home/nugget/Desktop/Mish/ProyectoBaseAc2/ProyectoBaseAc2/ProyectoBaseAc2/Proyecto Base.srcs/sources_1/new/ALU.vhd:14]
+INFO: [Synth 8-3491] module 'Super_Register_File' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:34' bound to instance 'inst_sup_reg_fil' of component 'Super_Register_File' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'Super_Register_File' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:57]
+INFO: [Synth 8-3491] module 'Register_File' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:37' bound to instance 'inst_RegFile' of component 'Register_File' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'Register_File' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:57]
+INFO: [Synth 8-3491] module 'Reg' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:37' bound to instance 'inst_RegA' of component 'Reg' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'Reg' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:45]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD15' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'FFD' [/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'FFD' (6#1) [/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:12]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD14' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:98]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD13' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:107]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD12' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:116]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD11' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:125]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD10' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:134]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD9' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:143]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD8' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:152]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD7' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:161]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD6' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:170]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD5' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:179]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD4' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:188]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD3' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:197]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD2' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:206]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD1' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:215]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'inst_FFD0' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:224]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (7#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:45]
+INFO: [Synth 8-3491] module 'Reg' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:37' bound to instance 'inst_RegB' of component 'Reg' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:103]
+INFO: [Synth 8-3491] module 'Reg' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:37' bound to instance 'inst_RegC' of component 'Reg' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:110]
+INFO: [Synth 8-3491] module 'Reg' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:37' bound to instance 'inst_RegD' of component 'Reg' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:117]
+INFO: [Synth 8-3491] module 'Reg' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Reg.vhd:37' bound to instance 'inst_Status' of component 'Reg' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:127]
+INFO: [Synth 8-226] default block is never used [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:138]
+INFO: [Synth 8-226] default block is never used [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:145]
+INFO: [Synth 8-256] done synthesizing module 'Register_File' (8#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Register_File.vhd:57]
+INFO: [Synth 8-3491] module 'PC' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:25' bound to instance 'inst_PC' of component 'PC' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'PC' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:33]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-3491] module 'FFD' declared at '/home/nugget/Desktop/Mish/ProyectoBasePro/Proyecto Base.srcs/sources_1/new/FFD.vhd:4' bound to instance 'PC_BIT' of component 'FFD' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'PC' (9#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/PC.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Super_Register_File' (10#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Super_Register_File.vhd:57]
+INFO: [Synth 8-226] default block is never used [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:160]
+INFO: [Synth 8-226] default block is never used [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:167]
+WARNING: [Synth 8-3848] Net dis in module/entity CPU does not have driver. [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (11#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/CPU.vhd:25]
+INFO: [Synth 8-3491] module 'ROM' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/ROM.vhd:6' bound to instance 'inst_ROM' of component 'ROM' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'ROM' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/ROM.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (12#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/ROM.vhd:17]
+INFO: [Synth 8-3491] module 'RAM' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/RAM.vhd:8' bound to instance 'inst_RAM' of component 'RAM' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'RAM' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/RAM.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (13#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/RAM.vhd:18]
+INFO: [Synth 8-3491] module 'Clock_Divider' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:7' bound to instance 'inst_Clock_Divider' of component 'Clock_Divider' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'Clock_Divider' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Divider' (14#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Clock_Divider.vhd:13]
+INFO: [Synth 8-3491] module 'Display_Controller' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:7' bound to instance 'inst_Display_Controller' of component 'Display_Controller' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'Display_Controller' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Display_Controller' (15#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Display_Controller.vhd:19]
+INFO: [Synth 8-3491] module 'Debouncer' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer0' of component 'Debouncer' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (16#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:14]
+INFO: [Synth 8-3491] module 'Debouncer' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer1' of component 'Debouncer' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:231]
+INFO: [Synth 8-3491] module 'Debouncer' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer2' of component 'Debouncer' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:232]
+INFO: [Synth 8-3491] module 'Debouncer' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer3' of component 'Debouncer' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:233]
+INFO: [Synth 8-3491] module 'Debouncer' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Debouncer.vhd:8' bound to instance 'inst_Debouncer4' of component 'Debouncer' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:234]
+INFO: [Synth 8-3491] module 'Programmer' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:8' bound to instance 'inst_Programmer' of component 'Programmer' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:237]
+INFO: [Synth 8-638] synthesizing module 'Programmer' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:19]
+INFO: [Synth 8-3491] module 'UART' declared at '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/UART.vhd:11' bound to instance 'inst_UART' of component 'UART' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'UART' [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/UART.vhd:37]
+	Parameter DIVISOR bound to: 54 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UART' (17#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/UART.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Programmer' (18#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:19]
+WARNING: [Synth 8-3848] Net led in module/entity Basys3 does not have driver. [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:8]
+INFO: [Synth 8-256] done synthesizing module 'Basys3' (19#1) [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Basys3.vhd:17]
+WARNING: [Synth 8-3331] design Control_U has unconnected port rom[45]
+WARNING: [Synth 8-3331] design Control_U has unconnected port rom[44]
+WARNING: [Synth 8-3331] design Control_U has unconnected port rom[35]
+WARNING: [Synth 8-3331] design Control_U has unconnected port rom[34]
+WARNING: [Synth 8-3331] design Control_U has unconnected port rom[30]
+WARNING: [Synth 8-3331] design Control_U has unconnected port rom[29]
+WARNING: [Synth 8-3331] design Control_U has unconnected port rom[28]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[15]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[14]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[13]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[12]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[11]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[10]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[9]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[8]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[7]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[6]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[5]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[4]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[3]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[2]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[1]
+WARNING: [Synth 8-3331] design CPU has unconnected port dis[0]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[15]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[14]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[13]
+WARNING: [Synth 8-3331] design CPU has unconnected port rom_dataout[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[15]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[14]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[13]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[0]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1982.766 ; gain = 265.469 ; free physical = 160 ; free virtual = 1328
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1989.703 ; gain = 272.406 ; free physical = 165 ; free virtual = 1334
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1989.703 ; gain = 272.406 ; free physical = 165 ; free virtual = 1334
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1989.703 ; gain = 0.000 ; free physical = 158 ; free virtual = 1329
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]
+Finished Parsing XDC File [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/constrs_1/new/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2128.406 ; gain = 0.000 ; free physical = 143 ; free virtual = 1335
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2128.406 ; gain = 0.000 ; free physical = 143 ; free virtual = 1335
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 168 ; free virtual = 1376
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 168 ; free virtual = 1376
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 168 ; free virtual = 1376
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "selectfirst" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "selectsecond" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SelTwo" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Sel_Alu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "S_Reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'memory_reg[2]' and it is trimmed from '8' to '6' bits. [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memory_reg[0]' and it is trimmed from '8' to '4' bits. [/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.srcs/sources_1/new/Programmer.vhd:92]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 156 ; free virtual = 1369
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 48    
++---Registers : 
+	               62 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 107   
++---Muxes : 
+	   2 Input     62 Bit        Muxes := 1     
+	   4 Input     27 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 7     
+	   4 Input     16 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  12 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 26    
+	   5 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Basys3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+Module Control_U 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module FFD 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Reg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Register_File 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module PC 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 11    
+Module CPU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+Module ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     62 Bit        Muxes := 1     
+Module Clock_Divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     27 Bit        Muxes := 1     
+Module Display_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module Debouncer 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module UART 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module Programmer 
+Detailed RTL Component Info : 
++---Registers : 
+	               62 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  12 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "inst_CPU/inst_Control_Unit/Sel_Alu" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[15]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[14]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[13]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[12]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[2]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[1]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port led[0]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Basys3 has unconnected port sw[2]
+warning: Removed RAM inst_RAM/memory_reg due to inactive write enable
+WARNING: [Synth 8-6014] Unused sequential element inst_RAM/memory_reg was removed. 
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[bits][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[fsm_state] )
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][8]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][7]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][7]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][6]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][6]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][5]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][5]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][4]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][4]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][3]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][3]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][2]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][2]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][1]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[nbits][3]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[nbits][0]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[nbits][2]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[nbits][0]'
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[nbits][0]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[nbits][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[nbits][1] )
+INFO: [Synth 8-3886] merging instance 'inst_Programmer/inst_UART/tx_state_reg[bits][1]' (FDE) to 'inst_Programmer/inst_UART/tx_state_reg[bits][0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst_Programmer/inst_UART/tx_state_reg[bits][0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:00 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 196 ; free virtual = 1353
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+---------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives       | 
++------------+---------------------+-----------+----------------------+------------------+
+|Basys3      | inst_ROM/memory_reg | Implied   | 4 K x 62             | RAM256X1S x 992	 | 
++------------+---------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:12 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 180 ; free virtual = 1306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:13 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 149 ; free virtual = 1275
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+---------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives       | 
++------------+---------------------+-----------+----------------------+------------------+
+|Basys3      | inst_ROM/memory_reg | Implied   | 4 K x 62             | RAM256X1S x 992	 | 
++------------+---------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:15 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 141 ; free virtual = 1268
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:20 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 149 ; free virtual = 1276
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:20 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 149 ; free virtual = 1276
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 149 ; free virtual = 1276
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 149 ; free virtual = 1276
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 149 ; free virtual = 1276
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 149 ; free virtual = 1276
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |CARRY4    |    16|
+|3     |LUT1      |     8|
+|4     |LUT2      |    22|
+|5     |LUT3      |   253|
+|6     |LUT4      |   113|
+|7     |LUT5      |   123|
+|8     |LUT6      |   418|
+|9     |MUXF7     |   113|
+|10    |MUXF8     |    29|
+|11    |RAM256X1S |   960|
+|12    |FDPE      |     1|
+|13    |FDRE      |   299|
+|14    |FDSE      |     1|
+|15    |IBUF      |     8|
+|16    |OBUF      |    13|
+|17    |OBUFT     |    16|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------+--------------------+------+
+|      |Instance                       |Module              |Cells |
++------+-------------------------------+--------------------+------+
+|1     |top                            |                    |  2396|
+|2     |  inst_CPU                     |CPU                 |   145|
+|3     |    inst_Control_Unit          |Control_U           |     5|
+|4     |    inst_sup_reg_fil           |Super_Register_File |   140|
+|5     |      inst_PC                  |PC                  |    24|
+|6     |        \GEN_PC_FF[0].PC_BIT   |FFD_66              |     2|
+|7     |        \GEN_PC_FF[10].PC_BIT  |FFD_67              |     1|
+|8     |        \GEN_PC_FF[11].PC_BIT  |FFD_68              |     1|
+|9     |        \GEN_PC_FF[1].PC_BIT   |FFD_69              |     3|
+|10    |        \GEN_PC_FF[2].PC_BIT   |FFD_70              |     1|
+|11    |        \GEN_PC_FF[3].PC_BIT   |FFD_71              |     1|
+|12    |        \GEN_PC_FF[4].PC_BIT   |FFD_72              |     4|
+|13    |        \GEN_PC_FF[5].PC_BIT   |FFD_73              |     5|
+|14    |        \GEN_PC_FF[6].PC_BIT   |FFD_74              |     1|
+|15    |        \GEN_PC_FF[7].PC_BIT   |FFD_75              |     1|
+|16    |        \GEN_PC_FF[8].PC_BIT   |FFD_76              |     3|
+|17    |        \GEN_PC_FF[9].PC_BIT   |FFD_77              |     1|
+|18    |      inst_RegFile             |Register_File       |   116|
+|19    |        inst_RegA              |Reg                 |    16|
+|20    |          inst_FFD0            |FFD_50              |     1|
+|21    |          inst_FFD1            |FFD_51              |     1|
+|22    |          inst_FFD10           |FFD_52              |     1|
+|23    |          inst_FFD11           |FFD_53              |     1|
+|24    |          inst_FFD12           |FFD_54              |     1|
+|25    |          inst_FFD13           |FFD_55              |     1|
+|26    |          inst_FFD14           |FFD_56              |     1|
+|27    |          inst_FFD15           |FFD_57              |     1|
+|28    |          inst_FFD2            |FFD_58              |     1|
+|29    |          inst_FFD3            |FFD_59              |     1|
+|30    |          inst_FFD4            |FFD_60              |     1|
+|31    |          inst_FFD5            |FFD_61              |     1|
+|32    |          inst_FFD6            |FFD_62              |     1|
+|33    |          inst_FFD7            |FFD_63              |     1|
+|34    |          inst_FFD8            |FFD_64              |     1|
+|35    |          inst_FFD9            |FFD_65              |     1|
+|36    |        inst_RegB              |Reg_0               |    21|
+|37    |          inst_FFD0            |FFD_34              |     2|
+|38    |          inst_FFD1            |FFD_35              |     2|
+|39    |          inst_FFD10           |FFD_36              |     1|
+|40    |          inst_FFD11           |FFD_37              |     1|
+|41    |          inst_FFD12           |FFD_38              |     1|
+|42    |          inst_FFD13           |FFD_39              |     1|
+|43    |          inst_FFD14           |FFD_40              |     1|
+|44    |          inst_FFD15           |FFD_41              |     1|
+|45    |          inst_FFD2            |FFD_42              |     2|
+|46    |          inst_FFD3            |FFD_43              |     2|
+|47    |          inst_FFD4            |FFD_44              |     2|
+|48    |          inst_FFD5            |FFD_45              |     1|
+|49    |          inst_FFD6            |FFD_46              |     1|
+|50    |          inst_FFD7            |FFD_47              |     1|
+|51    |          inst_FFD8            |FFD_48              |     1|
+|52    |          inst_FFD9            |FFD_49              |     1|
+|53    |        inst_RegC              |Reg_1               |    16|
+|54    |          inst_FFD0            |FFD_18              |     1|
+|55    |          inst_FFD1            |FFD_19              |     1|
+|56    |          inst_FFD10           |FFD_20              |     1|
+|57    |          inst_FFD11           |FFD_21              |     1|
+|58    |          inst_FFD12           |FFD_22              |     1|
+|59    |          inst_FFD13           |FFD_23              |     1|
+|60    |          inst_FFD14           |FFD_24              |     1|
+|61    |          inst_FFD15           |FFD_25              |     1|
+|62    |          inst_FFD2            |FFD_26              |     1|
+|63    |          inst_FFD3            |FFD_27              |     1|
+|64    |          inst_FFD4            |FFD_28              |     1|
+|65    |          inst_FFD5            |FFD_29              |     1|
+|66    |          inst_FFD6            |FFD_30              |     1|
+|67    |          inst_FFD7            |FFD_31              |     1|
+|68    |          inst_FFD8            |FFD_32              |     1|
+|69    |          inst_FFD9            |FFD_33              |     1|
+|70    |        inst_RegD              |Reg_2               |    63|
+|71    |          inst_FFD0            |FFD                 |     3|
+|72    |          inst_FFD1            |FFD_3               |     3|
+|73    |          inst_FFD10           |FFD_4               |     3|
+|74    |          inst_FFD11           |FFD_5               |     3|
+|75    |          inst_FFD12           |FFD_6               |     9|
+|76    |          inst_FFD13           |FFD_7               |     5|
+|77    |          inst_FFD14           |FFD_8               |     5|
+|78    |          inst_FFD15           |FFD_9               |     8|
+|79    |          inst_FFD2            |FFD_10              |     3|
+|80    |          inst_FFD3            |FFD_11              |     3|
+|81    |          inst_FFD4            |FFD_12              |     3|
+|82    |          inst_FFD5            |FFD_13              |     3|
+|83    |          inst_FFD6            |FFD_14              |     3|
+|84    |          inst_FFD7            |FFD_15              |     3|
+|85    |          inst_FFD8            |FFD_16              |     3|
+|86    |          inst_FFD9            |FFD_17              |     3|
+|87    |  inst_Clock_Divider           |Clock_Divider       |    69|
+|88    |  inst_Display_Controller      |Display_Controller  |    38|
+|89    |  inst_Programmer              |Programmer          |   477|
+|90    |    inst_UART                  |UART                |    58|
+|91    |  inst_ROM                     |ROM                 |  1627|
++------+-------------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 2128.406 ; gain = 411.109 ; free physical = 149 ; free virtual = 1276
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 2128.406 ; gain = 272.406 ; free physical = 198 ; free virtual = 1325
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 2128.414 ; gain = 411.109 ; free physical = 198 ; free virtual = 1326
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2128.414 ; gain = 0.000 ; free physical = 255 ; free virtual = 1389
+INFO: [Netlist 29-17] Analyzing 1118 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2128.414 ; gain = 0.000 ; free physical = 211 ; free virtual = 1352
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 960 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 960 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:41 . Memory (MB): peak = 2128.414 ; gain = 662.062 ; free physical = 282 ; free virtual = 1423
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2128.414 ; gain = 0.000 ; free physical = 282 ; free virtual = 1423
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.runs/synth_1/Basys3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Basys3_utilization_synth.rpt -pb Basys3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 10 03:05:06 2025...

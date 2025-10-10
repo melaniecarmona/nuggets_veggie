@@ -1,0 +1,118 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Fri Oct 10 03:06:50 2025
+| Host         : nugget-lol running 64-bit KDE neon User Edition
+| Command      : report_control_sets -verbose -file Basys3_control_sets_placed.rpt
+| Design       : Basys3
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    40 |
+|    Minimum number of control sets                        |    40 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    51 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    40 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     8 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    24 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              19 |            9 |
+| No           | No                    | Yes                    |               1 |            1 |
+| No           | Yes                   | No                     |              56 |           18 |
+| Yes          | No                    | No                     |             144 |          100 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              81 |           68 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|      Clock Signal     |                  Enable Signal                 |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++-----------------------+------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|  clock_BUFG           |                                                | inst_Programmer/bussy_sinc                              |                1 |              1 |
+|  rx_state_reg[enable] |                                                |                                                         |                2 |              3 |
+|  rx_state_reg[enable] | inst_Programmer/inst_UART/state                | inst_Programmer/inst_UART/state_reg[3]_0                |                1 |              4 |
+|  clk_IBUF_BUFG        | inst_Programmer/inst_UART/sample               | inst_Programmer/inst_UART/rx_state[bits][7]_i_1_n_0     |                1 |              4 |
+|  rx_state_reg[enable] | inst_Programmer/memory[0]_1                    |                                                         |                2 |              4 |
+|  rx_state_reg[enable] | inst_Programmer/memory[2]_3                    |                                                         |                6 |              6 |
+|  rx_state_reg[enable] | inst_Programmer/memory[4]_5                    |                                                         |                6 |              6 |
+|  rx_state_reg[enable] | inst_Programmer/memory[5]_6                    |                                                         |                4 |              8 |
+|  rx_state_reg[enable] | inst_Programmer/memory[1]_2                    |                                                         |                4 |              8 |
+|  rx_state_reg[enable] | inst_Programmer/memory[3]_7                    |                                                         |                4 |              8 |
+|  rx_state_reg[enable] | inst_Programmer/memory[9]_8                    |                                                         |                6 |              8 |
+|  rx_state_reg[enable] | inst_Programmer/memory[6]_4                    |                                                         |                5 |              8 |
+|  rx_state_reg[enable] | inst_Programmer/memory[7]_9                    |                                                         |                5 |              8 |
+|  rx_state_reg[enable] | inst_Programmer/memory[8][7]_i_1_n_0           |                                                         |                7 |              8 |
+|  clk_IBUF_BUFG        | inst_Programmer/inst_UART/rx_state_next[nbits] | inst_Programmer/inst_UART/rx_state[bits][7]_i_1_n_0     |                7 |              9 |
+|  clock_BUFG           |                                                | inst_Programmer/bussy                                   |                6 |             12 |
+|  clock_BUFG           | inst_ROM/bussy_reg_9                           | inst_Programmer/bussy                                   |               16 |             16 |
+|  clock_BUFG           | inst_ROM/bussy_reg_10                          | inst_Programmer/bussy                                   |               12 |             16 |
+|  clock_BUFG           | inst_ROM/bussy_reg_11                          | inst_Programmer/bussy                                   |               15 |             16 |
+|  clock_BUFG           | inst_ROM/bussy_reg_12                          | inst_Programmer/bussy                                   |               16 |             16 |
+|  clk_IBUF_BUFG        |                                                |                                                         |                7 |             16 |
+|  clk_IBUF_BUFG        |                                                | inst_Display_Controller/clock_divide_counter[0]_i_1_n_0 |                5 |             17 |
+|  clk_IBUF_BUFG        |                                                | inst_Clock_Divider/clear                                |                7 |             27 |
+|  rx_state_reg[enable] | inst_Programmer/inst_UART/E[0]                 |                                                         |               51 |             72 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_9                    |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_8                    |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_7                    |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_6                    |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_5                    |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_4                    |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_3                    |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_2                    |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_15                   |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_14                   |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_13                   |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_12                   |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_11                   |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_10                   |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_1                    |                                                         |               60 |            240 |
+|  clk_IBUF_BUFG        | inst_Programmer/ready_reg_0                    |                                                         |               60 |            240 |
++-----------------------+------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Oct 10 03:05:18 2025
+# Process ID: 3384
+# Current directory: /home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.runs/impl_1
+# Command line: vivado -log Basys3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Basys3.tcl -notrace
+# Log file: /home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.runs/impl_1/Basys3.vdi
+# Journal file: /home/nugget/Desktop/Mish/Modificaciones/Proyecto Base/Proyecto Base.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Basys3.tcl -notrace
